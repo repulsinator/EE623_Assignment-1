@@ -1,7 +1,7 @@
 # EE623 Assignment-1: Hindi Phonetic Analysis
 
 ## Overview
-This repository contains voice samples of Hindi vowels and consonants collected and analyzed for EE623 Assignment-1. The project focuses on analyzing the phonetic characteristics of Hindi speech sounds based on their place and manner of articulation.
+Voice sample recordings of selected Hindi vowels and consonants for EE623 Speech Signal Processing assignment.
 
 ## Language
 **Hindi** (Devanagari script)
@@ -9,97 +9,47 @@ This repository contains voice samples of Hindi vowels and consonants collected 
 ## Recording Specifications
 - **Sampling Frequency:** 44.1 kHz
 - **Bit Resolution:** 16 bits/sample
-- **Recording Tool:** Praat/Wavesurfer/Audacity
+- **Recording Tool:** Praat
 
-## Repository Structure
+## Recorded Samples
 
-### Vowels Recorded
+### Vowels (3 samples)
 
-#### Primary Vowels
-| Type | Short | Long |
-|------|-------|------|
-| Unrounded low central | अ (a) | आ (ā) |
-| Unrounded high front | इ (i) | ई (ī) |
-| Rounded high back | उ (u) | ऊ (ū) |
+| File Name | Character | Type | IPA |
+|-----------|-----------|------|-----|
+| अ :a: - Unrounded low central.wav | अ | Unrounded low central | /a/ |
+| इ :i: - Unrounded high front.wav | इ | Unrounded high front | /i/ |
+| उ :u: - Rounded high back.wav | उ | Rounded high back | /u/ |
 
-**Files:**
-- `अ :a: - Unrounded low central.wav`
-- `इ :i: - Unrounded high front.wav`
-- `उ :u: - Rounded high back.wav`
+### Secondary Vowel (1 sample)
 
-#### Secondary Vowels
-| Type | Sound |
-|------|-------|
-| Unrounded front | ए (e), ऐ (ai) |
-| Rounded back | ओ (o), औ (au) |
+| File Name | Character | Type | IPA |
+|-----------|-----------|------|-----|
+| ए :e: - Unrounded front.wav | ए | Unrounded front | /e/ |
 
-### Consonants Recorded
+### Consonants (4 samples)
 
-#### Plosives (Sparshta)
-Organized by place and manner of articulation:
+All consonants are **voiced plosives** from different places of articulation:
 
-**Voiced Consonants:**
-- `ग :ga: - Unaspirated voiced.wav` (Velar - Unaspirated)
-- `घ :gha: - Aspirated voiced.wav` (Velar - Aspirated)
-- `ज :ja: - Unaspirated voiced.wav` (Palatal - Unaspirated)
-- `झ :jha: - Aspirated voiced.wav` (Palatal - Aspirated)
+| File Name | Character | Place | Aspiration | IPA |
+|-----------|-----------|-------|------------|-----|
+| ग :ga: - Unaspirated voiced.wav | ग | Velar (Kantya) | Unaspirated | /ga/ |
+| घ :gha: - Aspirated voiced.wav | घ | Velar (Kantya) | Aspirated | /gʰa/ |
+| ज :ja: - Unaspirated voiced.wav | ज | Palatal (Tālavya) | Unaspirated | /d͡ʒa/ |
+| झ :jha: - Aspirated voiced.wav | झ | Palatal (Tālavya) | Aspirated | /d͡ʒʰa/ |
 
-## Analysis Performed
+## Total Recordings
+- **Vowels:** 4 (3 primary + 1 secondary)
+- **Consonants:** 4 (all voiced plosives)
+- **Total:** 8 voice samples
 
-### Objective 1: Spectral Analysis
-1. **Narrowband Spectrogram Analysis**
-   - Computed for voiced examples
-   - Pitch deduction from harmonic structure
-
-2. **Pitch Estimation**
-   - Using Average Magnitude Difference (AMD) function
-   - Time-domain pitch tracking
-
-3. **Wideband Spectrogram Analysis**
-   - Formant frequency identification
-   - First three formant (F1, F2, F3) contour marking
-
-### Objective 2: Cepstral Analysis
-1. Estimated average values of first three formant frequencies
-2. Calculated average pitch values
-3. Analysis over 6 consecutive frames
-4. Generated framewise plots of:
-   - Cepstrally smoothed spectra
-   - Cepstral sequences
-
-## Deliverables
-- Voice sample recordings (.wav files)
-- Analysis report (PDF)
-- MATLAB/Python code with comments
-- Spectrograms and plots
-
-## Phonetic Categories Covered
-
-### By Place of Articulation
-- Velar (Kantya): क, ख, ग, घ, ङ
-- Palatal (Tālavya): च, छ, ज, झ, ञ
-- Retroflex (Mūrdhanya): ट, ठ, ड, ढ, ण
-- Dental (Dantya): त, थ, द, ध, न
-- Labial (Öshtya): प, फ, ब, भ, म
-
-### By Manner of Articulation
-- Unaspirated Voiceless (Alpaprāna Śvāsa)
-- Aspirated Voiceless (Mahāprāna Śvāsa)
-- Unaspirated Voiced (Alpaprāna Nāda)
-- Aspirated Voiced (Mahāprāna Nāda)
-- Nasal (Anunāsika Nāda)
-
-## Usage
-The voice samples can be used for:
-- Phonetic research on Hindi speech sounds
-- Speech processing algorithm development
-- Acoustic analysis of Indian languages
-- Educational purposes in speech technology courses
+## Analysis Coverage
+These samples focus on:
+- Primary vowel articulation (unrounded and rounded positions)
+- Voiced consonants for clear pitch and formant analysis
+- Aspiration contrast in velar and palatal plosives
 
 ## Author
-Tarun Kurethiya  
-IIT Guwahati  
-EE623 - Speech Signal Processing
-
-
-*Note: All recordings are original and recorded specifically for this academic assignment.*
+Tarun Kurethiya
+EE623 - Speech Signal Processing  
+Assignment 1 - November 2025
